@@ -1,14 +1,32 @@
+import { Calendar } from 'lucide-react';
+
 function Hero() {
     return (
-        <main className="bg-">
-            <div className=" py-65">
-                <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">Bienvenidos a MichiVet Cuernavaca</h1>
-                <p className="text-lg text-center text-gray-600 mb-8">Cuidamos a tus mascotas con amor y profesionalismo</p>
+        <section className="bg-gray-100 py-20">
+            <div>
+                <h1 className="text-5xl text-blue-500 text-center font-extrabold mb-6">
+                    El cuidado que tu <span className="text-pink-400">michi</span> merece
+                </h1>
+                <p className="text-lg text-gray-600 text-center font-light mx-auto mb-8">En MichiVet somos especialistas apasionados por la salud felina.
+                    Brindamos atención médica de alta calidad en un ambiente diseñado solo para gatos.
+                </p>
                 <div className="flex justify-center">
-                    <a href="#servicios" className="bg-pink-400 text-white px-6 py-3 rounded-full hover:bg-pink-500 transition duration-300">Nuestros Servicios</a>
+
+                    <a href="#contacto" className="bg-blue-400 text-white px-5 py-3 rounded-full hover:bg-blue-500 transition-all shadow-md hover:shadow-lg active:scale-95 flex items-center">
+                        <Calendar size={32} className="text-black w-10 h-8" />
+                        Agenda tu cita
+                    </a>
+                </div>
+
+                <div className={"mt-12 flex justify-center"}>
+
+                    <img src="/images/hero-cat.png" alt="Imagen de un gato feliz" className="w-96 h-auto rounded-lg shadow-lg" />
+
                 </div>
             </div>
-        </main>
+
+
+        </section>
     )
 }
 
